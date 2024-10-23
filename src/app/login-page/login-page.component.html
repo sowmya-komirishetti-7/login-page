@@ -1,0 +1,29 @@
+
+<div class="outer-container">
+    <div class="inner-container">
+        
+        <div class="form-container">
+            <h2>Login</h2>
+            <form #signInForm="ngForm" (ngSubmit)="onSubmit(signInForm)">
+                <mat-form-field appearance="fill">
+                    <mat-icon matPrefix class="custom-icon">email</mat-icon>
+                    <!-- <mat-label>Email</mat-label> -->
+                    <input matInput type="email" placeholder="Enter your email" [(ngModel)]="email" name="email" required />
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-icon matPrefix class="custom-icon">lock</mat-icon>
+                    <!-- <mat-label>Password</mat-label> -->
+                    <input matInput type="password" placeholder="Enter your password" [(ngModel)]="password" name="password" required />
+                </mat-form-field>
+                <a href="#" class="forgot-password" (click)="onForgotPassword()">Forgot Password?</a>
+             <button mat-raised-button tye="submit" class="login-button" [disabled]="signInForm.invalid">Login</button> 
+                <!-- <button type="submit" class="btn btn-primary btn-block">Login</button> -->
+            </form>
+            <p class="sign-up">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+        <div class="image-container">
+            <img src="https://images.pexels.com/photos/8472919/pexels-photo-8472919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image" class="img-fluid w-100 h-100" alt="Login Image" />
+        </div>
+    </div>
+</div>

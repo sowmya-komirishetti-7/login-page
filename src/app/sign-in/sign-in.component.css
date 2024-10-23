@@ -1,0 +1,70 @@
+/* Container for image and form */
+.container {
+  display: flex;
+  height: 97vh; /* Full viewport height */
+  width: 98%;
+}
+
+/* Image section takes 60% of the width */
+.image-section {
+  flex: 0 0 60%; /* Flex-grow: 0, Flex-shrink: 0, Flex-basis: 60% */
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the section without distortion */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: rgb(26, 24, 24);
+    font-size: 24px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Form section takes 40% of the width */
+.form-section {
+  flex: 0 0 40%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.form-section label {
+  margin: 10px 0 5px;
+}
+
+.form-section input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-section button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #0056b3;
+}

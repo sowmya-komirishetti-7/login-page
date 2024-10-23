@@ -1,0 +1,20 @@
+h2 {
+    font-size: 24px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.container-fluid {
+    height: 100vh;
+}
+
+.sign-in-header {
+    margin-left: 180px; 
+    text-align: left; 
+}
